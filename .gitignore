@@ -1,0 +1,10 @@
+# Intellij IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Maven
+log/
+target/
+test-output/

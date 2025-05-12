@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="GoRestAPIwithRestAssured">
+        <classes>
+            <class name="tests.CreateUserTest">
+                <methods>
+                    <include name="createUserTest"/>
+                </methods>
+            </class>
+            <class name="tests.GetUserDetailsTest">
+                <methods>
+                    <include name="getUserDetailsTest"/>
+                </methods>
+            </class>
+            <class name="tests.UpdateUserTest">
+                <methods>
+                    <include name="updateUserTest"/>
+                </methods>
+            </class>
+            <class name="tests.PartiallyUpdateUserTest">
+                <methods>
+                    <include name="partiallyUpdateUserTest"/>
+                </methods>
+            </class>
+            <class name="tests.DeleteUserTest">
+                <methods>
+                    <include name="deleteUserTest"/>
+                </methods>
+            </class>
+            <class name="tests.GetAllUsersTest">
+                <methods>
+                    <include name="getAllUsersTest"/>
+                    <include name="getAllUsersParamsTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
