@@ -36,7 +36,6 @@ public class DeleteUserTest extends Hooks {
 
         //API Chaining
         id = (int) context.getSuite().getAttribute("userId");
-        //id = 7774283;
 
         String sysPath = System.getProperty("user.dir");
         jsonData = new File(sysPath + "/src/test/java/data/users.json");

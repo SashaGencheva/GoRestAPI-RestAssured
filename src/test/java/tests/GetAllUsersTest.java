@@ -46,7 +46,6 @@ public class GetAllUsersTest extends Hooks {
 
         String sysPath = System.getProperty("user.dir");
         jsonData = new File(sysPath + "/src/test/java/data/users.json");
-        //jsonData = new File("C:\\Users\\digger\\IdeaProjects\\GoRestAPIwithRestAssured\\src\\test\\java\\data\\users.json");
 
         //Jackson API
         mapper = new ObjectMapper();
@@ -65,17 +64,6 @@ public class GetAllUsersTest extends Hooks {
 
         System.out.println(BaseRequest.getResponseStatusLine(response));
         System.out.println("Response JSON from API: " + responseJson);
-
-
-//        System.out.println(response.getStatusCode());
-//        System.out.println(response.getStatusLine());
-//        //System.out.println(response.print());
-//        System.out.println(response.getHeader("Connection"));
-//        System.out.println(response.getContentType());
-//        System.out.println(response.asString());
-//        System.out.println(response.asPrettyString());
-        //System.out.println(response.jsonPath().getString("name"));
-        //response.prettyPrint();
 
         actualStatusCode = BaseRequest.getResponseCode(response);
         actualStatusLine = BaseRequest.getResponseStatusLine(response);
@@ -119,7 +107,6 @@ public class GetAllUsersTest extends Hooks {
 
         String sysPath = System.getProperty("user.dir");
         jsonData = new File(sysPath + "/src/test/java/data/users.json");
-        //jsonData = new File("C:\\Users\\digger\\IdeaProjects\\GoRestAPIwithHTTPClient\\src\\test\\java\\data\\users.json");
 
         //Jackson API
         mapper = new ObjectMapper();

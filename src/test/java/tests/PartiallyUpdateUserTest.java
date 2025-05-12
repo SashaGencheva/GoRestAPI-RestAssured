@@ -33,7 +33,6 @@ public class PartiallyUpdateUserTest extends Hooks {
     String actualGender;
     String actualStatus;
     String actualMessage;
-    //int expectedId;
     String expectedName;
     String expectedEmail;
     String expectedGender;
@@ -48,7 +47,6 @@ public class PartiallyUpdateUserTest extends Hooks {
 
         //API Chaining
         id = (int) context.getSuite().getAttribute("userId");
-        //id = 7774283;
 
         String sysPath = System.getProperty("user.dir");
         jsonData = new File(sysPath + "/src/test/java/data/users.json");
@@ -88,7 +86,6 @@ public class PartiallyUpdateUserTest extends Hooks {
             actualEmail = String.valueOf(responseJson.get("email"));
             actualGender = String.valueOf(responseJson.get("gender"));
             actualStatus = String.valueOf(responseJson.get("status"));
-            //expectedId = user.getId();
             expectedName = user.getName();
             expectedEmail = user.getEmail();
             expectedGender = user.getGender();
